@@ -1,0 +1,787 @@
+# Translation of Plugins - 1CRM Customer Connection for WordPress - Development (trunk) in German
+# This file is distributed under the same license as the Plugins - 1CRM Customer Connection for WordPress - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-05-21 23:19+1000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.6.4\n"
+"Language: de\n"
+"Project-Id-Version: Plugins - 1CRM Customer Connection for WordPress - "
+"Development (trunk)\n"
+"POT-Creation-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+#: admin/booking.php:91
+msgid "Resync Manually"
+msgstr "Manuell neu synchronisieren"
+
+#: admin/booking.php:89
+msgid "Save Settings"
+msgstr "Einstellungen speichern"
+
+#: admin/booking.php:43 admin/booking.php:44
+msgid "Booking Calendar"
+msgstr "Buchungskalender"
+
+#: admin/booking.php:15
+msgid "Enable Booking Calendar Synchronization with 1CRM"
+msgstr "Aktiviere die Synchronisierung des Buchungskalenders mit 1CRM"
+
+#: admin/options.php:99
+msgid ""
+"Please check that 1CRM version is 8.6 or greater and that you have a "
+"subscription to the Customer Connection portal added to your 1CRM license "
+"key."
+msgstr ""
+"Bitte überprüfe, ob die 1CRM-Version 8.6 oder höher ist und ob ein "
+"Abonnement für das Customer Connection-Portal besteht, das dem 1CRM-"
+"Lizenzschlüssel hinzugefügt wurde."
+
+#: admin/options.php:93
+msgid "1CRM authentication failed. Please check URL, Client ID and API Secret"
+msgstr ""
+"1CRM-Authentifizierung fehlgeschlagen. Bitte überprüfe die URL, die Client-"
+"ID und das API-Geheimnis"
+
+#: admin/options.php:77
+msgid "1CRM Customer Connection Settings"
+msgstr "Einstellungen für 1CRM Customer Connection "
+
+#: admin/options.php:43
+msgid "API Secret"
+msgstr "API-Geheimnis"
+
+#: admin/options.php:30
+msgid "API Client ID"
+msgstr "API-Client-ID"
+
+#: admin/options.php:16
+msgid "API URL"
+msgstr "API-URL"
+
+#: admin/shortcodes.php:124
+msgid "displays customer name with a title"
+msgstr "zeigt den Kundennamen mit einem Titel an"
+
+#: admin/shortcodes.php:120
+msgid "You can combine multiple parameters in one shortcode:"
+msgstr "Es können mehrere Parameter in einem Shortcode kombiniert werden:"
+
+#: admin/shortcodes.php:116
+msgid "displays register link"
+msgstr "Zeigt den Registrierungslink an"
+
+#: admin/shortcodes.php:113
+msgid "displays logout link"
+msgstr "zeigt den Abmeldelink an"
+
+#: admin/shortcodes.php:110
+msgid "displays login link"
+msgstr "zeigt den Anmeldelink an"
+
+#: admin/shortcodes.php:107
+msgid "displays customer name and company name"
+msgstr "Zeigt den Kundennamen und Unternehmensnamen an"
+
+#: admin/shortcodes.php:104
+msgid "displays a title"
+msgstr "zeigt einen Titel an"
+
+#: admin/shortcodes.php:100
+msgid ""
+"To display customer information inside a page, add the "
+"[onecrm_p_customer_info] shortcode to your page content. The shortcode "
+"accepts parameters that control the information displayed by the shortcode:"
+msgstr ""
+"Füge dem Seiteninhalt den Shortcode [onecrm_p_customer_info] hinzu, um "
+"Kundeninformationen auf einer Seite anzuzeigen. Der Shortcode akzeptiert "
+"Parameter, die die vom Shortcode angezeigten Informationen steuern:"
+
+#: admin/shortcodes.php:97
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: admin/shortcodes.php:94
+msgid ""
+"You can use multiple instances of the widget in different areas. For "
+"example, you may want to display customer name in the footer, and login "
+"links in the sidebar."
+msgstr ""
+"Es können mehrere Instanzen des Widgets in verschiedenen Bereichen verwendet "
+"werden. Beispielsweise den Kundennamen in der Fußzeile und Anmeldelinks in "
+"der Seitenleiste anzeigen lassen."
+
+#: admin/shortcodes.php:90
+msgid ""
+"Login and Register links, if enabled, will be displayed to site visitors who "
+"are not logged in. The Logout link, if enabled, will be displayed to logged-"
+"in users."
+msgstr ""
+"Die Links zum Anmelden und Registrieren werden, falls aktiviert, den nicht "
+"angemeldeten Website-Besuchern angezeigt. Der Link zum Abmelden, falls "
+"aktiviert, wird den angemeldeten Benutzern angezeigt."
+
+#: admin/shortcodes.php:89
+msgid ""
+"The widget can be configured to display customer name, account name, and/or "
+"login/logout/register links. "
+msgstr ""
+"Das Widget kann so konfiguriert werden, dass Kundenname, Kontoname und/oder "
+"Links zum Anmelden/Abmelden/Registrieren angezeigt werden."
+
+#: admin/shortcodes.php:88
+msgid ""
+"1CRM Customer Connection provides a \"Customer Connection Customer Info\" "
+"widget that you can place in any of the widget areas of your site. Available "
+"widget areas depend on the Wordpress theme in use. "
+msgstr ""
+"1CRM Customer Connection bietet ein Widget \"Customer Connection Customer "
+"Info\", das in einem der Widget-Bereiche der Website platziert werden kann. "
+"Die verfügbaren Widget-Bereiche hängen vom verwendeten WordPress-Thema ab."
+
+#: admin/shortcodes.php:85
+msgid "Widget"
+msgstr "Widget"
+
+#: admin/shortcodes.php:82
+msgid ""
+"Within different areas of your site you can display information about the "
+"customer who has logged in. Customer information is available in two forms: "
+"as a widget and as a shortcode."
+msgstr ""
+"In verschiedenen Bereichen der Website, können die Informationen zu dem "
+"angemeldeten Kunden angezeigt werden. Kundeninformationen sind in zwei "
+"Formen verfügbar: als Widget und als Shortcode."
+
+#: admin/shortcodes.php:79
+msgid "Customer Details"
+msgstr "Kundendetails"
+
+#: admin/shortcodes.php:76
+msgid ""
+"After creating pages which use the [onecrm_p_signup] and "
+"[onecrm_subscriptions] shortcodes, be sure to open the dashboard settings of "
+"1CRM Customer Connection and set \"Subscription management page\" to the "
+"page with the [onecrm_subscriptions] shortcode."
+msgstr ""
+"Öffne nach dem Erstellen von Seiten, die die Shortcodes [onecrm_p_signup] "
+"und [onecrm_subscriptions] verwenden, die Dashboard-Einstellungen von 1CRM "
+"Customer Connection und setze \"Subscription Management Page\" auf die Seite "
+"mit dem Shortcode [onecrm_subscriptions]."
+
+#: admin/shortcodes.php:73
+msgid ""
+"The 1CRM Customer Connection plugin provides two shortcodes for "
+"subscriptions. Insert the [onecrm_p_signup] shortcode to display a \"Signup"
+"\" form that will be used by your site visitors to create a subscription. Or "
+"use the [onecrm_subscriptions] shortcode to render a list of the current "
+"user's subscriptions."
+msgstr ""
+"Das 1CRM Customer Connection Plugin bietet zwei Shortcodes für Abonnements. "
+"Gebe den Shortcode [onecrm_p_signup] ein, um ein \"Anmelde\" -Formular "
+"anzuzeigen, das von den Website-Besuchern zum Erstellen eines Abonnements "
+"verwendet wird. Oder verwende den Shortcode [onecrm_subscriptions], um eine "
+"Liste der Abonnements des aktuellen Benutzers zu rendern."
+
+#: admin/shortcodes.php:66
+msgid "Do not insert more than one [onecrm_p_dashboard] shortcode into a page"
+msgstr ""
+"Füge nicht mehr als einen [onecrm_p_dashboard] Shortcode auf einer Seite ein"
+
+#: admin/shortcodes.php:66
+msgid "Note:"
+msgstr "Notiz:"
+
+#. translators: %s will be replaced with an URL
+#: admin/shortcodes.php:57
+msgid ""
+"The 1CRM Customer Connection plugin can display information from various "
+"1CRM modules to customers. Currently, the following modules are supported: "
+"Projects, Cases, Bugs, Quotes, and Invoices. To display a list of of records "
+"from all the supported modules, simply insert the [onecrm_p_dashboard] "
+"shortcode into a page. You can enable or disable modules in <a href=\"%s"
+"\">Dashboard Settings</a>. You can also display records from a single module "
+"by specifying the \"model\" parameter in the shortcode. Use one of the "
+"following:"
+msgstr ""
+"Das 1CRM Customer Connection Plugin kann Kunden Informationen von "
+"verschiedenen 1CRM-Modulen anzeigen. Derzeit werden die folgenden Module "
+"unterstützt: Projekte, Fälle, Fehler, Angebote und Rechnungen. Füge einfach "
+"den Shortcode [onecrm_p_dashboard] in eine Seite ein, um eine Liste der "
+"Datensätze aller unterstützten Module anzuzeigen. Module können in <a href="
+"\"%s\"> Dashboard-Einstellungen </a> aktiviert oder deaktiviert werden. "
+"Datensätze können auch von einem einzelnen Modul angezeigt werden, indem der "
+"Parameter \"model\" im Shortcode angegeben wird. Verwende eine der folgenden "
+"Methoden:"
+
+#: admin/shortcodes.php:54
+msgid "Dashboard: Information from 1CRM modules"
+msgstr "Dashboard: Informationen von 1CRM-Modulen"
+
+#. translators: %s will be replaced with an URL
+#: admin/shortcodes.php:48
+msgid ""
+"In <a href=\"%s\">Dashboard Settings</a>, set Index Page and Detail Page to "
+"the pages you created in the steps above."
+msgstr ""
+"Stelle in <a href=\"%s\"> Dashboard-Einstellungen </a> die Indexseite und "
+"die Detailseite auf die Seiten ein, die in den obigen Schritten erstellt "
+"wurden."
+
+#: admin/shortcodes.php:43
+msgid ""
+"Then create another page that will serve as your <b>detail page</b> - it "
+"will display sub-topics and articles. On that page, insert the "
+"[onecrm_kb_articles] shortcode. Do not insert the [onecrm_kb_search] "
+"shortcode on this page, because the detail page will display its own search "
+"input.\n"
+msgstr ""
+"Erstelle dann eine weitere Seite, die als <b> Detailseite </b> dient. Dort "
+"werden Unterthemen und Artikel angezeigt. Füge auf dieser Seite den "
+"Shortcode [onecrm_kb_articles] ein. Füge auf dieser Seite nicht den "
+"Shortcode [onecrm_kb_search] ein, da auf der Detailseite eine eigene "
+"Sucheingabe angezeigt wird.\n"
+
+#: admin/shortcodes.php:40
+msgid ""
+"With this option, you create two pages. One of them will serve as the "
+"<b>index page</b> that displays top-level Help topics. On that page, place "
+"the [onecrm_kb_articles] shortcode where you want the content to appear. To "
+"add a search bar, insert the [onecrm_kb_search] shortcode where appropriate."
+msgstr ""
+"Mit dieser Option erstellt man zwei Seiten. Eine davon dient als <b> "
+"Indexseite </b>, auf der Hilfethemen der obersten Ebene angezeigt werden. "
+"Platziere auf dieser Seite den Shortcode [onecrm_kb_articles] an der Stelle, "
+"an der der Inhalt angezeigt werden soll. Füge zum Hinzufügen einer "
+"Suchleiste gegebenenfalls den Shortcode [onecrm_kb_search] ein."
+
+#: admin/shortcodes.php:38
+msgid "Two-page layout"
+msgstr "Zwei-Seiten-Layout"
+
+#. translators: %s will be replaced with an URL
+#: admin/shortcodes.php:35
+msgid ""
+"All pages in your Help System will use the same layout. In <a href=\"%s"
+"\">Dashboard Settings</a>, set both Index Page and Detail Page to \"None\". "
+"Create a page that will display the Help System content. Normally you will "
+"want to add that page to your site's main menu. On that page, place the "
+"[onecrm_kb_articles] shortcode where you want the content appear. To add a "
+"search bar, insert the [onecrm_kb_search] shortcode where appropriate."
+msgstr ""
+"Alle Seiten in dem Hilfesystem verwenden dasselbe Layout. Setze in <a href="
+"\"%s\"> Dashboard-Einstellungen </a> sowohl die Indexseite als auch die "
+"Detailseite auf \"Keine\". Erstelle eine Seite, auf der der Inhalt des "
+"Hilfesystems angezeigt wird. Normalerweise möchte man diese Seite zum "
+"Hauptmenü der Site hinzufügen. Platziere auf dieser Seite den Shortcode "
+"[onecrm_kb_articles] an der Stelle, an der der Inhalt angezeigt werden soll. "
+"Füge zum Hinzufügen einer Suchleiste gegebenenfalls den Shortcode "
+"[onecrm_kb_search] ein."
+
+#: admin/shortcodes.php:33
+msgid "One-page layout"
+msgstr "Ein-Seiten-Layout"
+
+#: admin/shortcodes.php:30
+msgid ""
+"The 1CRM Customer Connection plugin allows you to display topics and "
+"articles from the 1CRM Knowledge Base module. There are two possible ways to "
+"to organize your help system:"
+msgstr ""
+"Mit dem 1CRM Customer Connection-Plugin können Themen und Artikel aus dem "
+"1CRM Knowledge Base-Modul angezeigt werden. Es gibt zwei Möglichkeiten, das "
+"Hilfesystem zu organisieren:"
+
+#: admin/shortcodes.php:28
+msgid "Help System"
+msgstr "Hilfe-System"
+
+#: admin/shortcodes.php:25
+msgid ""
+"The 1CRM Customer Connection plugin provides a number of shortcodes - "
+"special tags that you insert into your pages to display information. The "
+"complete set of shortcodes and their descriptions are listed below."
+msgstr ""
+"Das 1CRM Customer Connection-Plugin bietet eine Reihe von Shortcodes - "
+"spezielle Tags, die in eine Seiten eingefügt werden können, um Informationen "
+"anzuzeigen. Der vollständige Satz von Shortcodes und ihre Beschreibungen "
+"sind unten aufgeführt."
+
+#: admin/shortcodes.php:6
+msgid "Usage Guide"
+msgstr "Gebrauchsanweisung"
+
+#: admin/shortcodes.php:5
+msgid "1CRM Customer Connection Usage Guide"
+msgstr "Gebrauchsanweisung für 1CRM Customer Connection"
+
+#: admin/templates/general_settings.php:38
+msgid "Import"
+msgstr "Importieren"
+
+#: admin/templates/general_settings.php:4
+msgid "1CRM Customer Connection General settings"
+msgstr "Allgemeine Einstellungen für 1CRM Customer Connection "
+
+#: admin/admin.php:16
+msgid "The synchronization process is running. Please wait."
+msgstr "Der Synchronisationsprozess wird ausgeführt. Bitte warten."
+
+#. translators: %s will be replaced by URL
+#: admin/booking.php:131 admin/dashboard.php:449
+msgid ""
+"1CRM authentication info is not configured properly. Please configure it <a "
+"href=\"%s\">here</a>"
+msgstr ""
+"1CRM-Authentifizierungsinformationen sind nicht richtig konfiguriert. Bitte "
+"konfiguriere es <a href=\"%s\"> hier </a>"
+
+#. translators: %s will be replaced with the error message
+#: admin/dashboard.php:439
+msgid "An error occured while calling 1CRM API: %s"
+msgstr "Beim Aufrufen der 1CRM-API ist ein Fehler aufgetreten: %s"
+
+#: admin/dashboard.php:430
+msgid "Save Dashboard Settings"
+msgstr "Dashboard-Einstellungen speichern"
+
+#: admin/dashboard.php:406
+msgid "Subscription management"
+msgstr "Abonnementverwaltung"
+
+#: admin/dashboard.php:243
+msgid "Line Items"
+msgstr "Auftragspositionen"
+
+#: admin/dashboard.php:240
+msgid "Data Entry Fields"
+msgstr "Dateneingabefelder"
+
+#: admin/dashboard.php:238
+msgid "Detail Fields"
+msgstr "Detailfelder"
+
+#: admin/dashboard.php:237
+msgid "List Fields"
+msgstr "Listenfelder"
+
+#: admin/dashboard.php:233
+msgid "Enabled"
+msgstr "Aktiviert"
+
+#: admin/dashboard.php:92 admin/dashboard.php:102 admin/dashboard.php:297
+#: admin/dashboard.php:307
+msgid "&mdash; None &mdash;"
+msgstr "&mdash; Keine &mdash;"
+
+#: admin/dashboard.php:7
+msgid "Dashboard Settings"
+msgstr "Dashboard-Einstellungen"
+
+#: admin/dashboard.php:6
+msgid "1CRM Customer Connection Dashboard Settings"
+msgstr "Dashboard-Einstellungen für 1CRM Customer Connection"
+
+#: include/class/Ajax.php:176
+msgid "The synchronization process was completed."
+msgstr "Der Synchronisationsprozess wurde abgeschlossen."
+
+#: include/class/Ajax.php:173
+msgid "The synchronization process is running already. Please try later."
+msgstr "Der Synchronisationsprozess läuft bereits. Bitte versuche es später."
+
+#: include/class/Ajax.php:126
+msgid "Please select at least one field"
+msgstr "Bitte wähle mindestens ein Feld aus"
+
+#. translators: %s will bre placed with field name
+#: include/class/Ajax.php:56
+msgid "Missing value for required field %s"
+msgstr "Fehlender Wert für erforderliches Feld %s"
+
+#: include/class/FilterFormView.php:78
+msgid "Filter"
+msgstr "Filter"
+
+#: include/class/ShortCodes.php:1091
+msgid "Payments"
+msgstr "Zahlungen"
+
+#: include/class/ShortCodes.php:1073
+msgid "Tasks"
+msgstr "Aufgaben"
+
+#: include/class/ShortCodes.php:1038
+msgid "Add Note"
+msgstr "Notiz hinzufügen"
+
+#: include/class/ShortCodes.php:1036
+msgid "Notes"
+msgstr "Notizen"
+
+#. translators: %0.2f will be replaced with discount amount
+#: include/class/ShortCodes.php:985
+msgid "Discount: %0.2f"
+msgstr "Rabatt: %0.2f"
+
+#: include/class/ShortCodes.php:977
+msgid "Totals"
+msgstr "Gesamtsumme"
+
+#. translators: %0.2f will be replaced with quote/invoice total amount
+#: include/class/ShortCodes.php:968 include/class/ShortCodes.php:1006
+msgid "Total: %0.2f"
+msgstr "Gesamt: %0.2f"
+
+#. translators: %0.2f will be replaced with shipping amount
+#: include/class/ShortCodes.php:956 include/class/ShortCodes.php:992
+msgid "Shipping: %0.2f"
+msgstr "Versand: %0.2f"
+
+#. translators: 3 arguments: %1$s will be replaced with tax name, %2$0.2f will
+#. be replaced with tax rate, second %3$0.2f will be replaced with tax amount.
+#. Note % after first %f!
+#: include/class/ShortCodes.php:941 include/class/ShortCodes.php:999
+msgid "%1$s (%2$0.2f%%): %3$0.2f"
+msgstr "%1$s (%2$0.2f%%): %3$0.2f"
+
+#. translators: %f will be replaced with group subtotal
+#: include/class/ShortCodes.php:934 include/class/ShortCodes.php:980
+msgid "Subtotal: %0.2f"
+msgstr "Zwischensumme: %0.2f"
+
+#. translators: This is default quote/invoice group name. If a group name is
+#. empty, default name will be generated. %d is the group namber
+#: include/class/ShortCodes.php:891
+msgid "Group %d"
+msgstr "Gruppe %d"
+
+#: include/class/ShortCodes.php:860
+msgid "Download PDF"
+msgstr "PDF herunterladen"
+
+#: include/class/ShortCodes.php:833
+msgid "Save Note"
+msgstr "Notiz speichern"
+
+#: include/class/ShortCodes.php:822
+msgid "Note title"
+msgstr "Titel der Notiz"
+
+#: include/class/ShortCodes.php:816
+msgid "Attachment (optional)"
+msgstr "Anhang (optional)"
+
+#: include/class/ShortCodes.php:784 include/class/ShortCodes.php:1281
+msgid "Customer Connection is not properly configured"
+msgstr "Customer Connection ist nicht richtig konfiguriert"
+
+#: include/class/ShortCodes.php:676 include/class/ShortCodes.php:763
+#: include/class/ShortCodes.php:1133 include/class/ShortCodes.php:1193
+#: include/class/ShortCodes.php:1243
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: include/class/ShortCodes.php:558
+msgid "Unable to load list for"
+msgstr "Liste kann nicht geladen werden"
+
+#: include/class/ShortCodes.php:382 include/class/ShortCodes.php:440
+msgid "Unable to load record"
+msgstr "Datensatz kann nicht geladen werden"
+
+#: include/class/ShortCodes.php:56 include/class/ShortCodes.php:139
+msgid "No Plans Selected"
+msgstr "Keine Pläne ausgewählt"
+
+#: include/class/ShortCodes.php:1365 include/class/Subscription.php:403
+msgid "Send"
+msgstr "Senden"
+
+#: include/class/ShortCodes.php:1323 include/class/Subscription.php:361
+msgid "Please provide your contact details to access this area"
+msgstr "Bitte Kontaktdaten angeben, um auf diesen Bereich zugreifen zu können"
+
+#: include/class/ShortCodes.php:1316 include/class/Subscription.php:354
+msgid "You need to login in order to access this area"
+msgstr "Bitte anmelden, um auf diesen Bereich zugreifen zu können"
+
+#: include/class/Subscription.php:342
+msgid "Payment Failed"
+msgstr "Bezahlung fehlgeschlagen"
+
+#: include/class/Subscription.php:329
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: include/class/Subscription.php:321
+msgid "Unpaid invoices"
+msgstr "Unbezahlte Rechnungen"
+
+#: include/class/Subscription.php:315
+msgid "Current term end"
+msgstr "Aktuelles Laufzeitende"
+
+#: include/class/Subscription.php:309
+msgid "Current term start"
+msgstr "Aktueller Laufzeitbeginn"
+
+#: include/class/Subscription.php:300
+msgid "Addon"
+msgstr "Add-on"
+
+#: include/class/Subscription.php:295
+msgid "Quantity"
+msgstr "Menge"
+
+#: include/class/ShortCodes.php:698 include/class/Subscription.php:239
+msgid "Create New"
+msgstr "Neu erstellen"
+
+#: include/class/Subscription.php:232 admin/shortcodes.php:70
+msgid "Subscriptions"
+msgstr "Abonnements"
+
+#. translators: %s will breplaced with an URL
+#: include/class/Subscription.php:219
+msgid ""
+"It can take up to a minute for the subscription to be updated. Please click "
+"<a href=\"%s\">here</a> in a while to refresh the list"
+msgstr ""
+"Es kann bis zu einer Minute dauern, bis das Abonnement aktualisiert ist. "
+"Bitte klicke nach einer kurzen Zeit auf <a href=\"%s\"> hier </a>, um die "
+"Liste zu aktualisieren"
+
+#. translators: %s will breplaced with an URL
+#: include/class/Subscription.php:212
+msgid ""
+"Your subscription was created. It can take up to a minute for the "
+"subscription to appear in the subscriptions list. Please click <a href=\"%s"
+"\">here</a> in a while to refresh the list"
+msgstr ""
+"Das Abonnement wurde erstellt. Es kann bis zu einer Minute dauern, bis das "
+"Abonnement in der Abonnementliste angezeigt wird. Bitte klicke nach einer "
+"kurzen Zeit auf <a href=\"%s\"> hier </a>, um die Liste zu aktualisieren"
+
+#: include/class/ShortCodes.php:828 include/class/Subscription.php:188
+msgid "Details"
+msgstr "Details"
+
+#. translators: %1$s is the first record displayed in pages range; %2$s is the
+#. last record displayed in pages range; %3$s is the total number of records
+#: include/class/Renderer/Pagination.php:49
+msgid "Displaying %1$s-%2$s of %3$s"
+msgstr "%1$s–%2$s von %3$s anzeigen"
+
+#: include/class/Renderer/ListView.php:100
+msgid "No records to display"
+msgstr "Keine Datensätze zum Anzeigen"
+
+#: include/class/Booking/CrmInvoice.php:147
+msgid "hours"
+msgstr "Stunden"
+
+#: include/class/Booking/CrmInvoice.php:146
+msgid "Duration"
+msgstr "Dauer"
+
+#: include/class/Booking/CrmInvoice.php:143
+msgid "Date End"
+msgstr "Enddatum"
+
+#: include/class/Booking/CrmInvoice.php:142
+msgid "Date Start"
+msgstr "Startdatum"
+
+#: include/class/Booking/CalendarAppointment.php:69
+msgid "Unknown"
+msgstr "Unbekannt"
+
+#: include/class/Booking/CrmInvoice.php:101
+#: include/class/Booking/CrmAppointment.php:77
+#: include/class/Booking/CrmAppointment.php:155
+#: include/class/Booking/CrmInvoiceLine.php:28
+msgid "Booking Appointment"
+msgstr "Terminbuchung"
+
+#: include/class/Booking/AppointmentsManager.php:342
+msgid "Every Five Minutes"
+msgstr "Alle fünf Minuten"
+
+#: include/class/PersonalDataEraseView.php:25
+msgid "Check fields you want to erase"
+msgstr "Überprüfe die Felder, die gelöscht werden sollen"
+
+#: include/class/CustomerWidget.php:129
+msgid "Company"
+msgstr "Unternehmen"
+
+#: include/class/CustomerWidget.php:127
+msgid "Name"
+msgstr "Name"
+
+#: include/class/CustomerWidget.php:84
+msgid "Title:"
+msgstr "Titel:"
+
+#: include/class/CustomerWidget.php:81
+msgid "New title"
+msgstr "Neuer Titel"
+
+#: include/class/CustomerWidget.php:69
+msgid "Register as a New User"
+msgstr "Als neuer Benutzer registrieren"
+
+#: include/class/CustomerWidget.php:61
+msgid "Login as an Existing User"
+msgstr "Anmeldung als bestehender Benutzer"
+
+#: include/class/CustomerWidget.php:51
+msgid "You are not logged in"
+msgstr "Du bist nicht angemeldet"
+
+#: include/class/CustomerWidget.php:24
+msgid "Displays infomation about Customer Connection user"
+msgstr "Zeigt Informationen zum Customer-Connection-Benutzer an"
+
+#: include/class/CustomerWidget.php:22
+msgid "Customer Connection Customer Info"
+msgstr "Customer-Connection-Kundeninfo"
+
+#: include/hooks.php:146
+msgid "Please enter your company name."
+msgstr "Bitte den Firmennamen eingeben."
+
+#: include/hooks.php:142
+msgid "Please enter your last name."
+msgstr "Bitte den Nachnamen eingeben."
+
+#: include/hooks.php:138
+msgid "Please enter your first name."
+msgstr "Bitte den Vornamen eingeben."
+
+#: include/hooks.php:138 include/hooks.php:142 include/hooks.php:146
+msgid "ERROR"
+msgstr "FEHLER"
+
+#: include/hooks.php:121 include/class/ShortCodes.php:1355
+#: include/class/Subscription.php:393
+msgid "Last name"
+msgstr "Nachname"
+
+#: include/hooks.php:115 include/class/ShortCodes.php:1350
+#: include/class/Subscription.php:388
+msgid "First name"
+msgstr "Vorname"
+
+#: include/hooks.php:109 include/class/ShortCodes.php:1360
+#: include/class/Subscription.php:398
+msgid "Company name"
+msgstr "Unternehmensname"
+
+#: include/class/ShortCodes.php:1024 include/index.php:456
+msgid "Contacts"
+msgstr "Kontakte"
+
+#: include/index.php:390
+msgid "Accounts"
+msgstr "Konten"
+
+#: include/index.php:360
+msgid "Leads"
+msgstr "Leads"
+
+#: include/index.php:314
+msgid "Opportunities"
+msgstr "Chancen"
+
+#: include/index.php:275
+msgid "Projects"
+msgstr "Projekte"
+
+#: include/index.php:216
+msgid "Invoices"
+msgstr "Rechnungen"
+
+#: include/index.php:157
+msgid "Quotes"
+msgstr "Angebote"
+
+#: include/index.php:99
+msgid "Software Bugs"
+msgstr "Software-Bugs"
+
+#: include/index.php:39
+msgid "Cases"
+msgstr "Fälle"
+
+#: include/kbmodule.php:306
+msgid "Error loading article notes"
+msgstr "Fehler beim Laden der Artikelnotizen"
+
+#: include/kbmodule.php:273
+msgid "Error loading article documents"
+msgstr "Fehler beim Laden der Artikeldokumente"
+
+#: include/kbmodule.php:240 include/kbmodule.php:406
+msgid "Error loading article"
+msgstr "Fehler beim Laden des Artikels"
+
+#: include/kbmodule.php:154 admin/admin.php:77
+msgid "Error loading articles list"
+msgstr "Fehler beim Laden der Artikelliste"
+
+#: include/kbmodule.php:151
+msgid "No content in this category"
+msgstr "Kein Inhalt in dieser Kategorie"
+
+#: include/kbmodule.php:133 include/index.php:416
+msgid "Articles"
+msgstr "Artikel"
+
+#. translators: %d is the number of articles
+#: include/kbmodule.php:106
+msgid "%d Articles"
+msgstr "%d Artikel"
+
+#: include/kbmodule.php:104
+msgid "1 Article"
+msgstr "1 Artikel"
+
+#. translators: %d is the number of topics
+#: include/kbmodule.php:102
+msgid "%d Topics"
+msgstr "%d Themen"
+
+#: include/kbmodule.php:100
+msgid "1 Topic"
+msgstr "1 Thema"
+
+#: include/kbmodule.php:96
+msgid "No content"
+msgstr "Kein Inhalt"
+
+#: include/kbmodule.php:69 include/kbmodule.php:88 include/kbmodule.php:178
+msgid "Topics"
+msgstr "Themen"
+
+#. Author of the plugin
+msgid "1CRM Systems Corp."
+msgstr "1CRM Systems Corp."
+
+#. Description of the plugin
+msgid "The easiest way to connect 1CRM with WordPress."
+msgstr "Der einfachste Weg, 1CRM mit WordPress zu verbinden."
+
+#. Plugin URI of the plugin
+msgid "https://1crm.com/1crm-wordpress-customer-connection/"
+msgstr "https://1crm.com/1crm-wordpress-customer-connection/"
+
+#. Plugin Name of the plugin
+#: admin/options.php:78
+msgid "1CRM Customer Connection"
+msgstr "1CRM Customer Connection"

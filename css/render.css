@@ -1,0 +1,435 @@
+/* div.onecrm classes for ListView, DetailView, EditView and look-alike. */
+div.onecrm .detailview, div.onecrm .detailview div { box-sizing:border-box; width: 100%;}
+/* max height is 4 lines of text at 1.5em height and .5em padding */
+div.onecrm .detailview .cell {
+    display:inline-block; max-height:14em; overflow-x:hidden; overflow-y:auto; margin-bottom:0.35em;
+}
+
+/* label / value layout within the cell */
+div.onecrm .detailview {
+    background:#f7fbff;
+    box-sizing:border-box;
+    border:1px solid #d4e0ea;
+    padding:0.5em;
+}
+div.onecrm .detailview .cell {
+    padding:0.5em;
+    outline:1px solid RGBA(224,224,224,0);
+    vertical-align:top;
+    /* outline:1px solid #8F8;  /**/
+    box-sizing:border-box !important;
+    line-height:1.5em;
+    transition:all 0.3s;
+}
+div.onecrm .detailview .cell:hover {
+    /*outline:1px solid RGBA(224,224,224,1.0);*/
+}
+div.onecrm .detailview .cell>label {
+    display:inline-block; width:100%; color:#697687;
+    font-weight:bold; text-align:left;
+} /* label above */
+div.onecrm .detailview .cell span { display:inline-block; width: 100%; } /* the value */
+div.onecrm .detailview.left .cell label { position:absolute; } /* label left */
+div.onecrm .detailview.left .cell span { padding-left:6em; } /* room for the label, then the value */
+
+div.onecrm .detailview .cell.required>label:after {
+	content: ' *';
+	color: #F00;
+	font-weight: bold;
+}
+
+
+/* number of columns/cells in a list view row: */
+div.onecrm table.listview {
+	border-spacing:0; 
+	background:#FFF; 
+	max-width:100%; 
+	table-layout:auto;
+	margin-bottom: 2em;
+}
+div.onecrm table.listview td, div.onecrm table.listview th {
+    border:0; margin:0; padding:0.25em; text-align:left;
+    max-height:6em; overflow:hidden;
+    max-width:25%;
+}
+div.onecrm table.listview tbody tr {
+    transition:all 0.3s; /* background rollover */
+}
+div.onecrm table.listview thead tr {
+    font-size:0.8em;
+    height:3em;
+    color: rgb(71, 70, 69);
+    background-image: linear-gradient(rgb(238, 246, 253) 40%, rgb(227, 239, 252) 100%);
+}
+div.onecrm table.listview thead tr th:not(:last-child) div {
+    border-right:1px solid rgb(212, 224, 234);
+    padding-right:0.5em;
+}
+div.onecrm table.listview thead tr th {
+    border-top: 1px solid #CCC; border-bottom:1px solid #CCC; vertical-align:middle;
+}
+div.onecrm table.listview thead tr th:first-child,div.onecrm table.listview tbody tr td:first-child {
+    border-left:1px solid #CCC; padding-left:0.5em;
+}
+div.onecrm table.listview thead tr th:last-child,div.onecrm table.listview tbody tr td:last-child {
+    border-right:1px solid #CCC; padding-right:0.5em;
+}
+div.onecrm table.listview tbody tr:last-child td {
+    border-bottom:1px solid #CCC;
+}
+div.onecrm table.listview tbody tr:nth-child(2n){ background:#f3f7fb;}
+div.onecrm table.listview tbody tr:hover { background:#DDD;}
+
+/* datatypes */
+
+/* numeric types: */
+div.onecrm .listview span.float, div.onecrm .listview span.number, div.onecrm .listview span.currency,
+div.onecrm .listview span.percent, div.onecrm .listview span.bool {
+    display:inline-block; width:100%; text-align:left;
+}
+div.onecrm .detailview span.float, div.onecrm .detailview span.number, div.onecrm .detailview span.currency,
+div.onecrm .detailview span.percent, div.onecrm .detailview span.phone, div.onecrm .detailview span.bool {
+    text-align:left;
+}
+
+div.onecrm table.listview thead tr th.col-case_number,
+div.onecrm table.listview thead tr th.col-bug_number {
+	width: 5%;
+}
+
+div.onecrm table.listview thead tr th.col-name {
+    width: 50%;
+}
+
+div.onecrm table.listview.contact thead tr th.col-name {
+    width: 30%;
+}
+
+div.onecrm table.listview.note thead tr th.col-name {
+    width: 20%;
+}
+
+div.onecrm table.listview thead tr th.col-status {
+    width: 15%;
+}
+
+div.onecrm table.listview thead tr th.col-priority {
+    width: 15%;
+}
+
+div.onecrm table.listview thead tr th.col-category {
+    width: 10%;
+}
+
+div.onecrm table.listview thead tr th.col-type {
+    width: 10%;
+}
+
+div.onecrm table.listview thead tr th.col-description-note {
+    width: 60%;
+}
+
+div.onecrm table.listview thead tr th.col-filename-note {
+    width: 20%;
+}
+
+div.onecrm table.listview tbody tr td.col-case_number span,
+div.onecrm table.listview tbody tr td.col-bug_number span {
+	padding-right: 5px;
+}
+
+div.onecrm table.listview tbody tr td.col-case_number,
+div.onecrm table.listview tbody tr td.col-bug_number {
+	max-width: 35px;
+}
+
+/* percentage / progress bar types: */
+div.onecrm .detailview .progress, div.onecrm .listview .progress {position:relative; }
+div.onecrm .detailview .progress>span, div.onecrm .listview .progress>span {
+    position:absolute; z-index:1;display:block; width:100%; text-align:center;
+    line-height:1.5em;
+}
+div.onecrm .listview .progress>span {
+    margin-top:-0.140em; /* HACK: adjust for td vertical alignment */
+}
+div.onecrm .detailview .progress>div, div.onecrm .listlview .progress>div {
+    padding:.125em .25em .125em 0; /* padding around the progress bar */
+}
+div.onecrm .detailview .progress>div>div, div.onecrm .listview .progress>div>div {
+    background:white; border:1px solid #DDD; border-radius:4px; /* border of the bar */
+}
+div.onecrm .detailview .progress>div>div>div, div.onecrm .listview .progress>div>div>div {
+    background:#DEF;height:1em; /* fill */
+}
+
+div.onecrm .detailview .progress>div>div>div { height:1.1em;}
+div.onecrm .detailview * a,div.onecrm .listview * a {text-decoration:none; box-shadow:none; color:#118}
+div.onecrm .listview td>*:not(:first-child) {font-size:0.85em;}
+
+div.onecrm a.url-image img {border:0; margin:0; box-shadow:none;}
+div.onecrm .detailview a.url-image img{ max-height:4.5em; max-width:90%;}
+div.onecrm .listview a.url-image img{ max-height:1.5em; max-width:90%}
+
+div.onecrm .badge, div.onecrm .badge-neutral {
+    display:inline-block;
+    line-height:1em; vertical-align:middle; text-align:center;
+    padding:0.2em 0.35em 0.2em 0.35em;
+    margin:0 2px 1px 1px;
+    width:auto !important;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,
+    rgba(245,245,245,0.8) 100%);
+    border:0; border-radius:4px;
+    box-shadow:0 0 0.5px 1px #9b9998;
+    color: #8a8987;
+    font-size:0.9em;
+    font-weight:700;
+    text-transform: uppercase;
+    text-shadow: rgba(180, 180, 180, 0.1) 0px 1px 0px;
+    white-space: nowrap;
+}
+div.onecrm .badge.state-success{
+    box-shadow:0 0 0.5px 1px rgb(102, 187, 102);
+    color: rgb(85, 153, 85);
+}
+div.onecrm .badge.state-pending{
+    box-shadow:0 0 0.5px 1px #8ad;
+    color: #57a;
+}
+div.onecrm .badge.state-draft{
+    box-shadow:0 0 0.5px 1px #c96;
+    color: #966d36;
+}
+div.onecrm .badge.state-dead{
+    background: linear-gradient(to bottom, rgba(205,202,200,0.5075) 0%,
+    rgba(193,189,186,0.5075) 100%);
+    box-shadow:0 0 0.5px 1px #abaaa9;
+    color: #4f4e4d;
+}
+div.onecrm .badge.state-active{
+    background: linear-gradient(to bottom, #7b98e2 0%, #68d 100%);
+    box-shadow:0 0 0.5px 1px #3c68d4;
+    color: #f6f6f6;
+}
+div.onecrm .badge.state-closed{
+    background: linear-gradient(to bottom, rgba(157,154,151,0.5075) 0%,
+    rgba(145,141,138,0.5075) 100%);
+    box-shadow:0 0 0.5px 1px #9b9998;
+    color: #fffefd;
+}
+div.onecrm .badge.state-deferred {
+    box-shadow:0 0 0.5px 1px #c8b;
+    color: #969;
+}
+div.onecrm .datetime {hyphens:none;}
+
+/* DetailView / EditView columns: */
+
+div.onecrm .detailview.one_column .cell { width:100%; }   /* 1 column list */
+div.onecrm .detailview.two_column .cell { width:50%; }    /* 2 column flow */
+div.onecrm .detailview.three_column .cell {width:33.33%;} /* 3 column flow */
+div.onecrm .detailview.four_column .cell {width:25%; }    /* 4 column flow */
+div.onecrm .detailview.five_column .cell {width:20%; }    /* 5 column flow */
+div.onecrm .detailview.six_column .cell {width:16.66%; }  /* 6 column flow */
+
+
+/* EditView inputs: */
+div.onecrm .detailview .cell input:not([type=radio]):not([type=checkbox]), div.onecrm .detailview .cell textarea,
+div.onecrm .detailview .cell button,div.onecrm .detailview .cell select,
+div.onecrm .detailview .cell .enum.list {
+    font-size:1em;
+    box-sizing:border-box;
+    padding:0.125em;
+    width:100%;
+    color:#444;
+    background:#fff;
+    border: 1px solid #DDD;
+}
+
+div.onecrm .enum.list {font-size:inherit;}
+div.onecrm .enum.list ul {margin:0; padding:0; list-style:none;
+    line-height:0;}
+div.onecrm .enum.list ul:after{content:'';display:block; line-height:0px; clear:both;}
+div.onecrm .enum.list ul li{
+    position:relative; display:block; float:left;
+    overflow:hidden; border:0; margin:0; padding:0; width:50%;}
+div.onecrm .enum.list.cols1 ul li { width:100%;}
+div.onecrm .enum.list.cols2 ul li { width:50%;}
+div.onecrm .enum.list.cols3 ul li { width:33.33%;}
+div.onecrm .enum.list ul li label { border-radius:6px; margin:0.15em;
+    display:block; box-sizing:border-box; padding-left:0.5em; line-height:1.8em; }
+div.onecrm .enum.list ul li label::first-line {line-height:1.5em;}
+div.onecrm .enum.list ul li input:checked + label  {background:#DEF;box-shadow:0.1em 0.1em 0.2em 0px RGBA(0,0,0,0.3);}
+div.onecrm .enum.list ul li input:checked + label:before  {content:'✔ ';}
+div.onecrm .enum.list ul li label:hover {
+    background:RGBA(0,0,0,0.06);
+}
+div.onecrm .enum.list ul li input { display:none;}
+
+/* ListView Column collapse rules: add to theme Custom CSS ) */
+/* DetailView Responsive Layout: */
+
+@media screen and (max-width: 960px), screen and (max-device-width: 960px) {
+    /* drop from 6 columns to 4, from 4 to 3, and from 3 to 2 */
+    div.onecrm .detailview.three_column .cell {width:50%; }   /* 3 column flow -> 2 */
+    div.onecrm .detailview.four_column .cell {width:33.33%; } /* 4 column flow -> 3 */
+    div.onecrm .detailview.five_column .cell {width:25%; }    /* 5 column flow -> 4 */
+    div.onecrm .detailview.six_column .cell {width:25%; }     /* 6 column flow -> 4 */
+}
+@media screen and (max-width: 640px), screen  and (max-device-width: 640px) {
+    /* drop to half as many columns */
+    div.onecrm .detailview.two_column .cell { width:100%; }   /* 2 column flow */
+    div.onecrm .detailview.four_column .cell {width:50%; }    /* 4 column flow -> 2 */
+    div.onecrm .detailview.five_column .cell {width:33.33%; } /* 5 column flow -> 3 */
+    div.onecrm .detailview.six_column .cell {width:33.33%; }  /* 6 column flow -> 3 */
+}
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+    div.onecrm .detailview { padding:0; }
+    div.onecrm .detailview .cell { padding:0.25em; }
+    /* drop to 2 columns */
+    div.onecrm .detailview.five_column .cell {width:50%; }    /* 5 column flow -> 2 */
+    div.onecrm .detailview.six_column .cell {width:50%; }     /* 6 column flow -> 2 */
+}
+@media screen and (max-width: 320px), screen and (max-device-width: 320px) {
+    /* drop to one column */
+    div.onecrm .detailview.three_column .cell {width:100%; }  /* 3 column flow -> 1 */
+    div.onecrm .detailview.four_column .cell {width:100%; }   /* 4 column flow -> 1 */
+    div.onecrm .detailview.five_column .cell {width:100%; }   /* 5 column flow -> 1 */
+    div.onecrm .detailview.six_column .cell {width:100%; }    /* 6 column flow -> 1 */
+}
+div.onecrm .cell.cell-text { width:100% !important; }   /* always full width */
+div.onecrm .cell.cell-head { border-bottom: 1px solid black; }   /* always full width */
+button.onecrm-p-create {
+	float: right;
+	margin-bottom: 8px;
+}
+button.onecrm-p-save {
+	margin-top: 8px !important;
+}
+
+button.onecrm-p-save:disabled,
+button.onecrm-p-save[disabled],
+button.onecrm-p-save[disabled]:hover {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+#onecrm-p-errors {
+	background-color: #FEE;
+	border: solid 1px #F00;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	color: #F00;
+	display: none;
+	padding: 10px;
+}
+#onecrm-p-errors.active {
+	display: block;
+}
+
+.onecrm-p-error + .onecrm-p-error {
+	margin-top: 10px;
+}
+			
+span.onecrm-p-page-number-separator:after {
+  content: "\2026";
+}
+
+a.onecrm-p-page-number {
+	border: solid 1px #00F;
+	min-width: 30px;
+	display: inline-block ;
+	text-align: center ;
+	border-radius: 4px;
+}
+
+a.onecrm-p-page-number.current {
+	background-color: #EEF;
+	font-weight: bold;
+}
+
+div.onecrm-p-pagination {
+	text-align: right;
+}
+
+div.onecrm-p-pagination + table.listview {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+table.listview + div.onecrm-p-pagination {
+	margin-bottom: 2em;
+}
+
+.onecrm-p-add-note h3 {
+	cursor: pointer;
+}
+
+.onecrm-p-add-note.expanded form {
+	display: block;
+}
+
+.onecrm-p-add-note form {
+	display: none;
+}
+
+.onecrm-p-tally-group-title {
+	margin-top: 20px;
+}
+
+.onecrm-p-tally-totals-header {
+	margin-top: 20px;
+	text-align: right;
+}
+
+.onecrm-p-tally-totals-line {
+	text-align: right;
+}
+.onecrm-subscription-status-active {
+	color: #0D0;
+}
+
+.onecrm-subscription-status-failed {
+	color: #D00;
+}
+
+.onecrm-subscription-status-inactive {
+	color: #999;
+}
+
+.onecrm-customer-widget h5 {
+	margin: 0;
+}
+
+.onecrm-customer-widget a.onecrm-customer-link {
+	display: block;
+	text-align: right;
+}
+
+.onecrm span.datetime {
+	min-width: 12em;
+	display: inline-block;
+}
+
+.onecrm .col-type-sequence_number div {
+	min-width: 8em;
+}
+
+.onecrm .col-type-date div, .onecrm .col-type-datetime div, .onecrm .col-type-item_number div {
+	min-width: 10em;
+}
+
+.onecrm .list-filters {
+    padding-bottom: 30px;
+}
+
+.onecrm .list-filter-form input[type=text] {
+    width: 20%;
+}
+
+.onecrm .list-filter-form input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: .08em;
+    margin: 0 10px 0 0;
+}

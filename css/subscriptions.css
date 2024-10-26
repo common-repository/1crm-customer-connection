@@ -1,0 +1,226 @@
+.onecrm-subscription-product  + .onecrm-subscription-product {
+	border-top: solid 1px #CCC;
+}
+
+.onecrm-subscription-product {
+	margin: 0;
+	padding: 8px;
+	cursor: pointer;
+	background: #EEE;
+	border-radius: 8px;
+	margin-bottom: 4px;
+}
+
+.onecrm-subscription-product:before {
+	content: "\2713";
+	font-weight: bold;
+	color: green;
+	float: left;
+	visibility: hidden;
+	margin-right: 8px;
+	font-size: 130%;
+}
+
+.onecrm-subscription-product.active:before {
+	visibility: visible;
+}
+
+.onecrm-subscription-product.active {
+	background: #EEF;
+}
+
+.onecrm-subscription-product-desc {
+}
+
+.onecrm-subscription-product-name {
+	font-size: 110%;
+	font-weight: bold;
+}
+
+.onecrm-subscription-product-name span {
+	float: right;
+}
+
+.onecrm-subscription-buttons {
+	text-align: right;
+	padding: 8px;
+	clear: both;
+}
+
+button[disabled] {
+	opacity: 0.5;
+}
+
+.onecrm-subscription-qty-input {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	display: block;
+}
+
+.onecrm-subscription-qty-input hr {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.onecrm-plan-total, .onecrm-addon-total {
+	margin-left: 10px;
+	float: right;
+	font-weight: bold;
+}
+
+.onecrm-subscription-option input, .onecrm-subscription-option select {
+	width: initial !important;
+}
+
+.onecrm-subscription-required:before {
+	content: "* ";
+	color: #F00;
+	font-weight: bold;
+}
+
+.onecrm-subscription-option-label {
+	font-weight: bold;
+	margin-right: 10px;
+	min-width: 300px;
+	display: inline-block;
+}
+
+.onecrm-subscription-option-error, .onecrm-subscription-errors {
+	color: #F00;
+	font-weight: bold;
+}
+
+.onecrm-subscription-option-error {
+	margin-bottom: 25px !important;
+}
+
+.onecrm-subscription-option-error:empty {
+	margin-bottom: 0  !important;
+}
+
+.onecrm-compare-link {
+	padding-left: 10px;
+}
+
+.onecrm-step-column {
+	display: inline-block;
+	width: 50%;
+	padding: 2ex;
+	vertical-align: top;
+}
+
+@media screen and (max-width: 1024px), screen  and (max-device-width: 1024px) {
+	.onecrm-step-column {
+		width: 100% !important;
+	}
+
+	.onecrm-subscription-option-label {
+		min-width: 130px;
+	}
+
+	.onecrm-plan-select {
+		max-width: 90%;
+	}
+}
+
+.onecrm-step-container {
+	display: block;
+}
+
+.onecrm-step-container + .onecrm-step-container {
+	margin-top: 10px;
+}
+
+.onecrm-step-container h3 {
+	margin: 0 0 10px;
+	border-bottom: solid 2px #AAA;
+}
+
+.onecrm-subscription-option {
+	margin-bottom: 8px;
+}
+
+.onecrm-subscription-dimmer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100000;
+	background: rgba(0, 0, 0, 0.8)
+}
+
+.onecrm-subscription-dimmer-inner {
+	position: absolute;
+	width: 600px;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.onecrm-subscription-dimmer-iframe {
+	width: 600px;
+	height: 600px;
+	border: none;
+}
+
+@media screen and (max-width: 640px), screen  and (max-device-width: 640px) {
+	.onecrm-subscription-dimmer-inner, .onecrm-subscription-dimmer-iframe {
+		width: 550px;
+	}
+}
+
+@media screen and (max-width: 590px), screen  and (max-device-width: 590px) {
+	.onecrm-subscription-dimmer-inner, .onecrm-subscription-dimmer-iframe {
+		width: 500px;
+	}
+}
+@media screen and (max-width: 540px), screen  and (max-device-width: 540px) {
+	.onecrm-subscription-dimmer-inner, .onecrm-subscription-dimmer-iframe {
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: 490px), screen  and (max-device-width: 490px) {
+	.onecrm-subscription-dimmer-inner, .onecrm-subscription-dimmer-iframe {
+		width: 400px;
+	}
+}
+
+
+@media screen and (max-width: 440px), screen  and (max-device-width: 440px) {
+	.onecrm-subscription-dimmer-inner, .onecrm-subscription-dimmer-iframe {
+		width: 350px;
+	}
+}
+
+
+@media screen and (max-width: 390px), screen  and (max-device-width: 390px) {
+	.onecrm-subscription-dimmer-inner, .onecrm-subscription-dimmer-iframe {
+		width: 300px;
+	}
+}
+
+.onecrm-subscription-qty-input input, .onecrm-subscription-qty-input select {
+	min-height: initial !important;
+}
+
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 450px;
+	background: white;
+	border: solid 1px #999;
+	border-radius: 4px;
+}
+
+.ui-tooltip table {
+	margin-bottom: 0;
+}
+
+.ui-tooltip p:last-child {
+	margin-bottom: 0;
+}

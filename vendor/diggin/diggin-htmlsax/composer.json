@@ -1,0 +1,36 @@
+{
+    "name": "diggin/diggin-htmlsax",
+    "description": "FORK of PEAR's XML_HTMLSax3",
+    "type": "library",
+    "license": "LGPL-3.0",
+    "keywords": [
+        "sax", "HTMLSax"
+    ],
+    "require": {
+        "php": ">=7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8",
+        "zendframework/zend-coding-standard": "^1.0",
+        "phpstan/phpstan": "^0.11.5"
+    },
+    "autoload": {
+        "psr-4":{
+            "Diggin\\HTMLSax\\":"src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4":{
+            "DigginTest\\HTMLSax\\":"tests/"
+        }
+    },
+    "scripts": {
+        "cs-check": "phpcs",
+        "cs-fix": "phpcbf"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0-dev"
+        }
+    }
+}

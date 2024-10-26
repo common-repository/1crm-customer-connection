@@ -1,0 +1,113 @@
+<div id="plan_selection_widget">
+    <h3>Sample Plan Selection Widget</h3>
+<!-- plans referenced in the shortcode are injected below this comment -->
+</div>
+
+<script id="plan_selection" type="text/template">
+    <form accept-charset="utf-8" onsubmit="return false;"><div class="onecrm">
+        <div class="onecrm-p-a-plan">
+            <input type="hidden" name="plan[pp_plan_id]" value="{HTML:pp_plan_id}">
+            <input type="hidden" name="plan[payment_processor_id]" value="{HTML:payment_processor_id}">
+            <h3>{name}</h3>
+            <div class="description">{product.thumbnail_url}{description}<br>{product.description_long}</div>
+            <div class="options">{all_options}</div>
+            <div class="billing_details">
+                <div class="billing_cycle">
+                    <label>Billing Period:</label> <span>{billing_cycle}</span>
+                </div>
+                <div class="plan_pricing"></div>
+                <div class="plan_quantity"></div>
+                <div class="plan_amount"></div>
+                <div class="grand_total"></div>
+            </div>
+            {product.image_url}
+            <div class="onecrm-p-a-addons"><h6>Available Addons:</h6></div>
+            <br class="cb">
+        </div>
+    </div></form>
+</script>
+
+
+<script id="addon_selection" type="text/template">
+    <div class="onecrm-p-a-addon">
+        <h3>{name}</h3>
+        <div class="description">{description}</div>
+        <div class="options">{all_options}</div>
+        <div class="billing_details">
+            <div class="billing_cycle">
+                <label>Billing Period:</label> <span>{billing_cycle}</span>
+            </div>
+            <div class="plan_pricing"></div>
+            <div class="addon_quantity"></div>
+            <div class="addon_amount"></div>
+        </div>
+    </div>
+</script>
+
+
+<script id="plan_quantity" type="text/template">
+    <label>{qty_label}</label> <input name="plan[quantity]" type="number" min="{HTML:qty_min}" value="{HTML:quantity}" size="6" style="width:6em; text-align:right;">
+</script>
+
+<script id="addon_quantity" type="text/template">
+    <label>{qty_label}</label> <input name="addon[{HTML:pp_addon_id}][quantity]" type="number" min="{HTML:qty_min}" value="{HTML:quantity}" size="6" style="width:6em; text-align:right;">
+</script>
+
+<script id="plan_amount" type="text/template">
+    <label>Plan amount:</label> <span class="currency_symbol">{currency_symbol}</span><span class="amount">{total}</span> <span class="currency_iso4217">{currency_iso4217}</span>
+</script>
+
+<script id="grand_total" type="text/template">
+    <label>Total amount:</label> <span class="currency_symbol">{currency_symbol}, billed {billing_cycle}</span><span class="amount">{grand_total}</span> <span class="currency_iso4217">{currency_iso4217}</span> {submit}
+</script>
+
+<script id="addon_amount" type="text/template">
+    <label>Addon amount:</label> <span class="currency_symbol">{currency_symbol}</span><span class="amount">{total}</span> <span class="currency_iso4217">{currency_iso4217}</span>
+</script>
+
+<script id="plan_pricing" type="text/template">
+    <div>
+        <h6>Pricing: {pricing.{pricing_model}}</h6>
+        <ul class="plan_tiers"></ul>
+    </div>
+</script>
+
+<script id="pricing_rows_Tiered" type="text/template">
+    <li><label>{qty_label}</label> <span class="quantity">{quantity} - {limit}</span> <span class="currency_symbol">{currency_symbol}</span><span class="amount">{amount}</span> <span class="currency_iso4217">{currency_iso4217}</span></li>
+</script>
+
+<script id="pricing_rows_Volume" type="text/template">
+    <li><label>{qty_label}</label> <span class="quantity">{quantity} - {limit}</span> <span class="currency_symbol">{currency_symbol}</span><span class="amount">{amount}</span> <span class="currency_iso4217">{currency_iso4217}</span></li>
+</script>
+
+<script id="pricing_rows_Stairstep" type="text/template">
+    <li><label>{qty_label}</label> <span class="quantity">{limit}</span> <span class="currency_symbol">{currency_symbol}</span><span class="amount">{amount}</span> <span class="currency_iso4217">{currency_iso4217}</span></li>
+</script>
+
+<script>
+    // glue script run when after the matching template is injected:
+    jQuery(function($){
+        var app=OneCRM.Portal.App;
+
+        app.tScripts['plan_selection'] = {
+            init: function (src, target, replace, leave) {
+                var plan = new app.Plan(replace[0], target);
+                plan.renderOptionSet();
+                plan.renderPricingModel('R.translations');
+                plan.renderQuantity();
+                plan.renderAddons('R.plan_wrappers');
+                plan.registerEvents('R.plan_wrappers');
+            }
+        };
+        app.tScripts['addon_selection'] = {
+            init: function (src, target, replace, leave) {
+                var addon = new app.Addon(replace[0], target);
+                var row = addon.row, pricing = addon.pricing;
+                addon.renderOptionSet();
+                addon.renderPricingModel('R.translations');
+                addon.renderQuantity();
+                addon.registerEvents();
+            }
+        };
+    });
+</script>

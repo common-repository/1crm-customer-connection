@@ -1,0 +1,93 @@
+/* styles used by pages which run ShortCode::enqueue_application_scripts() */
+
+/* prevent Chrome and iOS from incorrectly limiting width: for type=number input: */
+.onecrm-p-a input[type=number] {
+  max-inline-size: none; /* chrome 71 */
+  max-width: unset; min-width: unset; /* iOS12 */
+}
+
+.onecrm-p-a select:invalid { color: gray; }
+
+.onecrm-p-a .onecrm-p-a-plan{
+  border-radius:4px;
+  box-shadow: 1px 1px 12px 3px RGBA(0,0,0,0.1);
+  padding:5em;
+}
+.onecrm-p-a .xdebug  {
+  outline: 1px solid green;
+}
+
+.onecrm-p-a br.cb {clear:both;}
+
+#plan_selection_widget {background:#FFF; color:#666;}
+.onecrm-p-a-plan img.plan_product_thumbnail {
+  float:left; padding-right:1em; padding-bottom:0.5em;
+}
+.onecrm-p-a-plan .billing_details .plan_tiers .quantity {display:inline-block; width:8em; text-align:center;}
+.onecrm-p-a-plan .billing_details .plan_tiers li {list-style: none;}
+.onecrm-p-a-plan .billing_details .plan_tiers {margin-left:0;}
+
+.onecrm-p-a-plan .billing_details {clear:both; padding-top:3em; width:50%; float:left;}
+.onecrm-p-a-plan .plan_product_image {padding-top:3em; width:40%; float:left}
+.onecrm-p-a-plan .plan_product_image img {max-width:100%; max-height:100%; object-fit: cover;}
+
+.onecrm-p-a-plan .plan_amount, .onecrm-p-a-plan .addon_amount { padding-top:1.5em;}
+
+.onecrm-p-a-addons {clear:both; padding-top:3em;}
+.onecrm-p-a-addon {width:50%; float:left;}
+.onecrm-p-a-addon .billing_details {padding:0; width:100%; float: unset;}
+
+.onecrm-p-a-plan button.description_long+div {
+  clear:both; overflow-y:hidden; height:0; opacity:0; transition: 0.3s 86400s;
+}
+.onecrm-p-a-plan button.description_long:focus+div, .onecrm-p-a-plan button.description_long:hover+div {
+  opacity:1; padding-top:1em; padding-bottom:1em; height:100%; transition:0.3s;
+}
+
+.onecrm-p-a-plan .options>label {display:block; position:relative; padding-left:9em; clear:both;}
+.onecrm-p-a-plan .options>label>span {float:left; display:inline-block; padding:0.43em; padding-left:0; margin-left:-9em;}
+.onecrm-p-a-plan .options>label>input[type=checkbox] {float: initial;}
+.onecrm-p-a-plan .options>label>input[type=checkbox]+span {float:initial; display:inline; margin-left:1em;}
+
+/* 2 columns of options */
+.onecrm .onecrm-p-a-plan .options>label>span {display:none;}
+.onecrm .onecrm-p-a-plan .options>label {padding-left:0;}
+.onecrm .onecrm-p-a-plan .options>label {width:50%; display:inline-block;float:left;margin:0 0 .2rem 0; clear: unset;padding-right:1rem;}
+.onecrm .onecrm-p-a-plan .options>label.bool {width:100%;}
+.onecrm .onecrm-p-a-plan .options>label.access_url>input {width:50%}
+.onecrm .onecrm-p-a-plan .options>label.access_url>span {display:inline; margin:0 0 0 1em; float:none; }
+.onecrm .onecrm-p-a-plan .options>label>input[type=number] {width:100%;}
+.onecrm-p-a form input:not([type=checkbox]), .onecrm-p-a form select {padding-left:1em;}
+
+/* one column of options and no margins on Portrait Mobile devices or smaller */
+@media screen and (max-width: 480px), screen and (max-device-width: 480px) {
+  .onecrm .onecrm-p-a-plan .options>label {width:100%;padding:0;}
+  .onecrm-p-a .onecrm  .onecrm-p-a-plan {padding:0; margin-top:1em;}
+  .onecrm-p-a .onecrm  .onecrm-p-a-plan {padding:0; box-shadow: none;}
+}
+
+
+
+/* the talk popups */
+.onecrm-p-a mark.tip {
+  position:absolute; bottom:100%; margin-bottom:0.7em;
+  visibility: hidden; opacity:0; background: transparent;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+.onecrm-p-a label:hover mark.tip {visibility: visible; opacity: 1;}
+.onecrm-p-a .options mark.tip>span{
+  position:relative;
+  white-space: pre;
+  max-width:100%;
+  display:inline-block; padding: 1em;
+  background: #388c9c; color: #fff;
+  text-align: center; font-weight: 900;
+}
+.onecrm-p-a mark.tip>span:before {
+  content: "";
+  width: 0; height: 0;
+  position: absolute; left: 2em; bottom: -1.3em;
+  border: 0.7em solid #388c9c;
+  border-right: 0.7em solid transparent;
+  border-bottom: 0.7em solid transparent;
+}

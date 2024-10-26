@@ -1,0 +1,58 @@
+.onecrm-p-drag-placeholder {
+	border: dashed 1px #CCC;
+	display: block;
+	width: 100%;
+}
+		
+.onecrm-p-drag-placeholder-metabox {
+	border: dashed 1px #CCC;
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+}
+		
+.onecrm-p-handle {
+	width: 1em;
+	cursor: move;
+}
+
+.onecrm-p-tab  {
+	font-weight: bold;
+	padding: 8px;
+	display: inline-block;
+}
+
+.onecrm-p-tab.active:first-child  {
+	border-left: none;
+}
+
+.onecrm-p-tab.active  {
+	border-right: solid 1px #AAA;
+	border-left: solid 1px #AAA;
+	background-color: #FFF;
+}
+
+.onecrm-p-tabs {
+	padding: 0px;
+	border: solid 1px #AAA;
+	background-color: #EEE;
+}
+
+.onecrm-p-tabs-content {
+	border: solid 1px #AAA;
+	border-top: none;
+	padding: 8px;
+}
+
+.onecrm-p-tab-content.active {
+	display: block;
+}
+
+.onecrm-p-tab-content {
+	display: none;
+}
+					
+.onecrm-p-color-option td {
+	display: none;
+}
+

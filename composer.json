@@ -1,0 +1,22 @@
+{
+   "name": "1crm/portal2",
+   "description": "Customer Portal V1.0",
+   "type": "library",
+   "license": "GPL-2.0-or-later",
+   "minimum-stability": "dev",
+   "repositories": [
+	    {
+    	    "type": "vcs",
+	    	"url": "https://github.com/landy2005/SafeHTML"
+		}
+	],
+   "require": {
+      "onecrm/api": "dev-master",
+	  "pear/html_safe": "master"
+   },
+   "autoload": { 
+      "psr-4": { 
+         "OneCRM\\Portal\\": "./include/class"
+      }
+   }
+}
